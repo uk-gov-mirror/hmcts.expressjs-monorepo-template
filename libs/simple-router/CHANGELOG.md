@@ -1,5 +1,28 @@
 # @hmcts-cft/simple-router
 
+## [3.0.0](https://github.com/uk-gov-mirror/hmcts.expressjs-monorepo-template/compare/simple-router-v2.3.0...simple-router-v3.0.0) (2026-10-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* **simple-router:** MountSpec no longer has a trailingSlash field; TypeScript consumers passing it get a compile error (delete it, it never did anything). Route layouts that were silently broken now fail at startup: a method handler declaring 4 parameters, del and DELETE exported together, and two files in one mount resolving to the same URL.
+
+### Features
+
+* compiled-package libs and turbo dev pipeline ([#617](https://github.com/uk-gov-mirror/hmcts.expressjs-monorepo-template/issues/617)) ([523cc67](https://github.com/uk-gov-mirror/hmcts.expressjs-monorepo-template/commit/523cc67dc89964df955bd3b232b036bac8344b08))
+* publish @hmcts-cft/simple-router to Azure Artifacts ([#639](https://github.com/uk-gov-mirror/hmcts.expressjs-monorepo-template/issues/639)) ([cc7a165](https://github.com/uk-gov-mirror/hmcts.expressjs-monorepo-template/commit/cc7a165d23c6d75d469b19a53cad9ceea55ddb19))
+* publish @hmcts/simple-router to npm via changesets ([#628](https://github.com/uk-gov-mirror/hmcts.expressjs-monorepo-template/issues/628)) ([d7fba7a](https://github.com/uk-gov-mirror/hmcts.expressjs-monorepo-template/commit/d7fba7aee349ecc7d2f434b34039d3dc658f1dcd))
+* refactor routes, assets, and prisma models ([#610](https://github.com/uk-gov-mirror/hmcts.expressjs-monorepo-template/issues/610)) ([bfd3d84](https://github.com/uk-gov-mirror/hmcts.expressjs-monorepo-template/commit/bfd3d847843831c50a2a30d551add1e286a68c28))
+* refactor routes, assets, and prisma models ([#610](https://github.com/uk-gov-mirror/hmcts.expressjs-monorepo-template/issues/610)) ([bfd3d84](https://github.com/uk-gov-mirror/hmcts.expressjs-monorepo-template/commit/bfd3d847843831c50a2a30d551add1e286a68c28))
+* replace concurrently+nodemon with tsx watch and Vite dev middleware ([#661](https://github.com/uk-gov-mirror/hmcts.expressjs-monorepo-template/issues/661)) ([ecfe1cc](https://github.com/uk-gov-mirror/hmcts.expressjs-monorepo-template/commit/ecfe1ccef0f5e0a644f53af0a6da93df90936ed7))
+* **simple-router:** support multiple explicit URLs via ROUTES export ([#769](https://github.com/uk-gov-mirror/hmcts.expressjs-monorepo-template/issues/769)) ([b7e8bfb](https://github.com/uk-gov-mirror/hmcts.expressjs-monorepo-template/commit/b7e8bfbff149fe25f99d79fe30dd8f37a1f49c64))
+
+
+### Bug Fixes
+
+* **deps:** update dependency express to v5.2.1 ([#225](https://github.com/uk-gov-mirror/hmcts.expressjs-monorepo-template/issues/225)) ([519f668](https://github.com/uk-gov-mirror/hmcts.expressjs-monorepo-template/commit/519f66812776bd363a312534a845fc562e41c9d8))
+* **simple-router:** fix route registration, onError scope and duplicate detection ([#797](https://github.com/uk-gov-mirror/hmcts.expressjs-monorepo-template/issues/797)) ([1ccbfce](https://github.com/uk-gov-mirror/hmcts.expressjs-monorepo-template/commit/1ccbfce7c3f342a8690a0c060a7a659828cc6309))
+
 ## [2.3.0](https://github.com/hmcts/expressjs-monorepo-template/compare/simple-router-v2.2.0...simple-router-v2.3.0) (2026-09-16)
 
 
